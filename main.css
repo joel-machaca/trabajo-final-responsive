@@ -1,0 +1,416 @@
+*{
+    font-family:'Montserrat', sans-serif;
+}
+
+/* --------------------- */
+/* Estilos generales */
+/* --------------------- */
+
+/* Fondo y estilos del body */
+body {
+    background-image: url(./img/fondomasoscuro.avif);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+/* CARRUSEL */
+.carrusel-sub {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+.carousel-caption h5 {
+    background-color: #00000067;
+    font-size: 2rem; /* Cambia este valor para ajustar el tamaño del título */
+}
+
+.carousel-caption p {
+    background-color: #00000067;
+    font-size: 1.2rem; /* Cambia este valor para ajustar el tamaño del párrafo */
+}
+
+/* CARRUSEL TERMINADO */
+
+.logo-titulo img {
+    width: 250px;
+    height: 50px;
+}
+
+/* Fondo oscuro aplicado en secciones específicas */
+.fondo-nav {
+    background-color: #000;
+}
+
+/* Fuente Montserrat (reemplazada por Roboto en este caso) */
+.fuente-montserrat {
+    font-family: Roboto, sans-serif;
+}
+
+/* --------------------- */
+/* Encabezado y barra de navegación */
+/* --------------------- */
+
+/* Enlaces en la barra de navegación */
+.navbar-nav .nav-link {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+/* Efecto hover en los enlaces de la navegación */
+.navbar-nav .nav-link:hover {
+    color: #e6e333;
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    display: flex; /* Usar Flexbox en el navbar */
+    justify-content: space-between; /* Espacio entre logo y menú */
+    align-items: center; /* Centra los elementos verticalmente */
+}
+
+.container-fluid {
+    display: flex; /* Asegura que los elementos dentro se distribuyan con Flexbox */
+    justify-content: space-between; /* Espacio entre el logo y el resto */
+    align-items: center; /* Centra verticalmente */
+}
+
+.navbar-nav {
+    display: flex; /* Usar Flexbox para el menú */
+    gap: 15px; /* Espaciado entre los elementos del menú */
+}
+
+.menu-boton {
+    display: flex; /* Usar Flexbox para el formulario de búsqueda */
+    align-items: center; /* Centra verticalmente el botón y el input */
+}
+
+.menu-boton input {
+    margin-right: 5px; /* Espacio entre el input y el botón */
+}
+
+/* --------------------- */
+/* Títulos y textos */
+/* --------------------- */
+
+/* Títulos H2 */
+.subtitulo h2 {
+    font-size: 45px;
+}
+.carrusel-titulos h2{
+    font-size: 60px;
+}
+
+/* Texto en negrita */
+strong {
+    color: #dfdfdf;
+}
+
+/* Artículo con color específico */
+article {
+    color: #c2c5aa;
+}
+
+/* Colores principales */
+.color-main {
+    color: #dde0d9;
+}
+
+/* Colores en áreas destacadas */
+.color-destacado{
+    margin: 0 7px;
+}
+.color-destacado h5 {
+    color: #b5e22d;
+}
+
+.color-destacado p {
+    color: #737c6a;
+}
+/* boton encabezado */
+.boton {
+    background-color: transparent; 
+    color: #3bbb5b; 
+    border: 2px solid #215e30; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer;
+    border-radius: 5px; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.boton:hover {
+    border: 2px solid #1a4224;
+    background-color: #285032; /* Color de fondo al pasar el mouse */
+    color: rgb(211, 208, 208); /* Color del texto al pasar el mouse */
+}
+
+
+/* --------------------- */
+/* Sección de consultas y formulario */
+/* --------------------- */
+
+/* Contenedor del formulario */
+.margen-form {
+    background-image: url('img/fondoformulario.jpeg');
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 700px;
+    width: 100%;
+    color: #fff;
+    margin: 0 auto;
+    box-sizing: border-box; /* Añadir esta línea */
+}
+
+@media (max-width: 600px) {
+    .margen-form {
+        padding: 10px;
+        margin: 0; /* Evitar el margen en pantallas pequeñas */
+    }
+    
+    .margen-form * {
+        font-size: 0.9rem;
+    }
+
+    .margen-form input,
+    .margen-form button,
+    .margen-form select,
+    .margen-form textarea {
+        font-size: 0.8em;
+        padding: 8px;
+    }
+}
+
+
+
+/* Sección de consultas */
+.consultas-section {
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* Estilos para controles de formulario en la sección de consultas */
+.consultas-form .form-control,
+.consultas-form .form-select {
+    max-width: 100%;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+}
+
+/* Textarea en la sección de consultas */
+.consultas-form textarea {
+    resize: none;
+}
+
+/* Botón en la sección de consultas */
+
+
+/* Texto en las secciones de consultas y reservas */
+.consultas,
+.reservas {
+    color: #d2bbbb;
+}
+
+/* --------------------- */
+/* Formulario de reservaciones */
+/* --------------------- */
+
+.reservation-form {
+    background: rgba(0, 0, 0, .5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* --------------------- */
+/* Botones y enlaces */
+/* --------------------- */
+/* Estilo general para botones */
+
+.estilo-boton {
+    cursor: pointer;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    border-style: solid;
+    background-color: transparent;
+    border-color: rgb(255, 255, 255);
+    width: 120px;
+    height: 40px;
+    transition: 0.2s ease;
+    text-transform: uppercase;
+    border-width: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+  .estilo-boton:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(52, 53, 54);
+    border-color: rgb(59, 60, 61);
+    text-shadow: 0 0 50px white, 0 0 20px white, 0 0 15px white;
+    box-shadow: 0 0 15px rgb(0, 0, 0), 0 0 20px rgb(0, 0, 0),
+      0 0 10px rgb(0, 0, 0), 0 0 40px rgb(0, 0, 0);
+    font-size: 20px;
+    width: 130px;
+    height: 50px;
+    letter-spacing: 3px;
+  }
+  .estilo-boton:active {
+    width: 115px;
+    height: 38px;
+    letter-spacing: 0px;
+  }
+
+/* Enlaces sin subrayado */
+a {
+    text-decoration: none;
+}
+
+/* --------------------- */
+/* Estilos de elementos del menú */
+/* --------------------- */
+
+/* Items del menú */
+
+.menu-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #f9f9f925;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Imágenes dentro de los items del menú */
+.menu-item img{
+    max-width: 20%;
+    height: auto;
+}
+
+/* Insignia de precio en los items del menú */
+.menu-item .price-badge {
+    background-color: #f20202;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 50%;
+}
+
+/* --------------------- */
+/* Tablas */
+/* --------------------- */
+.tablas-color .encabezado th {
+    background-color: #6f1d1b;
+    color: #FFFFFF;
+
+}
+.margen-tabla .uno td{
+    background-color: #faece6;
+}
+
+.margen-tabla .dos td{
+    background-color: #fcf4f0;
+
+}
+
+th{
+    font-size: 30px;
+}
+
+
+
+.centered-table {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+/* Estilo para tablas en general */
+.encabezado .margen-tabla td{
+    padding: 15px 35px;
+}
+
+
+
+/* Última celda alineada a la derecha */
+td:last-child {
+    text-align: right;
+}
+
+/* Tamaño de fuente en las celdas */
+td {
+    font-size: 20px;
+}
+
+/* Tabla con respuesta horizontal */
+.table-responsive {
+    overflow-x: auto;
+}
+
+
+/* --------------------- */
+/* Footer */
+/* --------------------- */
+
+/* Fondo del pie de página */
+.fondo-footer {
+    background-color: #000;
+    padding-top: 1px;
+}
+
+/* Colores en el pie de página */
+.color-arriba-footer span,
+.copy,
+.fondo-footer p {
+    color: #fff;
+}
+
+.contacto .redes i {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.fondo-footer h6 {
+    color: #aeaeae;
+}
+
+/* --------------------- */
+/* Otros estilos adicionales */
+/* --------------------- */
+
+/* Tarjetas con borde blanco */
+/* Contenedor del artículo */
+
+  /* Tarjetas */
+/* Contenedor del artículo */
+article .container-fluid .container .card {
+    background-color: transparent; /* Fondo completamente transparente */
+  }
+  
+  /* Cuerpo de las tarjetas */
+article .container-fluid .container .card-body {
+    background-color: transparent; /* Fondo completamente transparente */
+  }
+  
+/* imagen a ajustada */
+.imagen-ajustada {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .imagen-ajustada img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: cover;
+  }
+
+*{
+    border: 1px solid;
+}
